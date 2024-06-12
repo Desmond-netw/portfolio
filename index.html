@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>myportfolio</title>
+	<!-- css links -->
+	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	  <link rel="stylesheet" type="text/css" href="assets/css/fontawesome_all.css">
+	  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	  <link rel="stylesheet" type="text/css" href="assets/css/main_style.css">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- ///////////////////////////////////////////////////////////////////////// -->
+	  <!-- chatUs css -->
+<style>
+	 .whatsapp-btn-container {
+			position: fixed;
+			left: 30px;
+			bottom: -50px;
+			padding: 24px;
+			opacity: 0;
+			z-index: 900;
+			animation: fade-up 2000ms forwards ;
+			animation-delay: 1000ms;
+		}
+		/*add some animations*/
+		@keyframes fade-up {
+			100% {
+				bottom: 24px;
+				opacity: 1;
+			}
+		}
+
+		.whatsapp-btn-container .whatsapp-btn {
+			font-size: 48px;
+			color: #25d366;
+			display: inline-block;
+			transition: all 400ms;
+		}
+		.whatsapp-btn-container .whatsapp-btn:hover {
+			transform: scale(1.2);
+		}
+		.whatsapp-btn-container span {
+			position: absolute;
+			top: 0;
+			left: 4px;
+			font-family: 'Roboto', sans-serif;
+			font-weight: bold;
+			font-size: 15px !important;
+			color: #fff;
+			transform: rotateZ(20deg) translateX(50px);
+			opacity: 0;
+			transition: all 400ms;
+		}
+		.whatsapp-btn-container .whatsapp-btn:hover + span {
+			transform: rotateZ(0deg) translateX(0px);
+			opacity: 1;
+		}
+ </style>
+<!-- ///////////////////////////////chat css end///////////////////////////////////// -->
+</head>
+<body class="mybody">
+	
+	<header>
+		<div class="menu-toggler">
+			<div class="bar half start"></div>
+			<div class="bar"></div>
+			<div class="bar half end"></div>
+		</div>
+		<!-- ============ navbar ========== -->
+		<nav class="top-nav">
+			<ul class="nav-list">
+				<li>
+					<a href="index.html" class="nav-link">Home</a>
+				</li>
+				<li>
+					<a href="#about" class="nav-link">About</a>
+				</li>
+				<li>
+					<a href="#services" class="nav-link">Services</a>
+				</li>
+				<li>
+					<a href="#portfolio" class="nav-link">Portfolio</a>
+				</li>
+				<li>
+					<a href="#experience" class="nav-link">Experience</a>
+				</li>
+				<li>
+					<a href="#contact" class="nav-link">contact</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- ======== landing text and image ======= -->
+		<div class="front-page">
+			
+			<div class="landing-text">
+				<h4 class="hero-name">I'm Desmond</h4>
+				<h1 class="hero-title">Web Developer <span>+</span> <br> UI | UX Designer</h1>
+
+				<!-- Donwload CV -->
+				<div class="mycv">
+					<a href="file/CV.pdf" download class="cvBtn" blank>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						Download CV 
+					</a>
+				</div>
+			</div>
+			<!-- --- profile ---- -->
+			<div class="landing-card">
+				<div class="card mycard">
+					<div class="card-container mycard-container">
+						<!-- ---- front face --- -->
+						<div class="card-face front-face">
+							<img src="assets/me.jpg" alt="profile">
+						</div>
+						<!-- back face -->
+						<div class="card-face back-face">
+							<div class="clock-container">
+								<h1>About clock</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!-- ///////////////bubbles //////// -->
+			<div class="bubbles">
+				<span style="--i:11;"></span>
+				<span style="--i:21;"></span>
+				<span style="--i:17;"></span>
+				<span style="--i:22;"></span>
+				<span style="--i:12;"></span>
+				<span style="--i:19;"></span>
+				<span style="--i:25;"></span>
+				<span style="--i:18"></span>
+				<span style="--i:19;"></span>
+				<span style="--i:20;"></span>
+				<span style="--i:26;"></span>
+				<span style="--i:29;"></span>
+				<span style="--i:18;"></span>
+				<span style="--i:30;"></span>
+				<span style="--i:23;"></span>
+				<span style="--i:31;"></span>
+				<span style="--i:14;"></span>
+				<span style="--i:37;"></span>
+				<span style="--i:16;"></span>
+				<span style="--i:09;"></span>
+				<span style="--i:20;"></span>
+				<span style="--i:26;"></span>
+				<span style="--i:09;"></span>
+				<span style="--i:11;"></span>
+				<span style="--i:21;"></span>
+				<span style="--i:17;"></span>
+				<span style="--i:22;"></span>
+				<span style="--i:12;"></span>
+				<span style="--i:19;"></span>
+				<span style="--i:25;"></span>
+				<span style="--i:18"></span>
+				<span style="--i:19;"></span>
+				<span style="--i:20;"></span>
+				<span style="--i:26;"></span>
+				<span style="--i:29;"></span>
+				<span style="--i:18;"></span>
+				<span style="--i:30;"></span>
+				<span style="--i:23;"></span>
+				<span style="--i:31;"></span>
+				<span style="--i:14;"></span>
+				<span style="--i:37;"></span>
+				<span style="--i:16;"></span>
+				<span style="--i:09;"></span>
+				<span style="--i:20;"></span>
+				<span style="--i:26;"></span>
+				<span style="--i:09;"></span>
+				<span style="--i:11;"></span>
+				<span style="--i:21;"></span>
+				<span style="--i:17;"></span>
+				<span style="--i:22;"></span>
+				<span style="--i:12;"></span>
+				<span style="--i:19;"></span>
+				<span style="--i:25;"></span>
+				<span style="--i:18"></span>
+				<span style="--i:19;"></span>
+				<span style="--i:20;"></span>
+				<span style="--i:26;"></span>
+				<span style="--i:29;"></span>
+				<span style="--i:18;"></span>
+				<span style="--i:30;"></span>
+				<span style="--i:23;"></span>
+				<span style="--i:31;"></span>
+				<span style="--i:14;"></span>
+				<span style="--i:37;"></span>
+				<span style="--i:16;"></span>
+				<span style="--i:09;"></span>
+				<span style="--i:20;"></span>
+				<span style="--i:26;"></span>
+				<span style="--i:09;"></span>
+			</div>
+	</header>
+	<!-- ============= ChatUs - Whatsapp ====================== -->
+	<div class="whatsapp-btn-container">
+		<a class="whatsapp-btn" href="https://wa.me/233553192758"><i class="fa-brands fa-whatsapp"></i></a>
+		<span>Contact Me</span>
+	</div>
+	<!-- ============= about-section ============ -->
+	<section class="about" id="about">
+		<div class="container">
+			<div class="profile-img">
+				<img src="assets/me2.jpg" alt="">
+			</div>
+			<div class="about-details">
+				<div class="about_heading">
+					<h1>About</h1>
+					<h6>Myself</h6>
+				</div>
+				<p>
+					I am fluid, focused and willing to learn new things. A creative and technically skilled professional with two (2) years of experience as an IT Specialist and Web Development. I am Committed to delivering exceptional technical assistance and troubleshooting expertise to ensure optimal network performance. Ready to utilizing my programming skills to enhance network efficiency, reliability, and security by providing exceptional support to end-users.
+				</p>
+				<!-- ----social media--- -->
+				<div class="mysocial-media">
+					<ul class="social-list">
+						<li class="so_list active">
+							<a href="#">
+								<div class="icon">
+									<i class="fab fa-facebook-square"></i>
+								</div>
+								<span class="icon-text">Facebook</span>
+							</a>
+						</li>
+						<li class="so_list active">
+							<a href="#">
+								<div class="icon">
+									<i class="fab fa-twitter-square"></i>
+								</div>
+								<span class="icon-text">Twitter</span>
+							</a>
+						</li>
+						<li class="so_list active">
+							<a href="#">
+								<div class="icon">
+									<i class="fab fa-instagram-square"></i>
+								</div>
+								<span class="icon-text">Instagram</span>
+							</a>
+						</li>
+					</ul>
+
+					<!-- <ul class="nav-list">
+						<li>
+							<a href="#" class="icon-link">
+								<i class="fab fa-facebook-square"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="icon-link">
+								<i class="fab fa-twitter-square"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="icon-link">
+								<i class="fab fa-instagram-square"></i>
+							</a>
+						</li>
+					</ul> -->
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<!--  ========== service ===============  -->
+	<section class="service" id="services">
+		<div class="container my_container">
+			<div class="section-heading">
+				<h1>Services</h1>
+				<h6>What I can do for you</h6>
+			</div>
+			<div class="my-skills">
+				<!-- skill set -->
+				<div class="skill">
+					<div class="icon-container">
+						<i class="fas fa-layer-group icon"></i>
+					</div>
+					<h1>Web Design</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing autem. dolor, sed laudantium et, suscipit consectetur veniam. Aliquid, ullam, quis.
+					</p>
+				</div>
+				<!-- skills set -->
+				<div class="skill">
+					<div class="icon-container">
+						<i class="fa-solid fa-code icon"></i>
+					</div>
+					<h1>Web Development</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing autem. 
+						dolor, sed laudantium et, suscipit consectetur veniam. Aliquid
+					</p>
+				</div>
+				<!-- skills set -->
+				<div class="skill">
+					<div class="icon-container">
+						<i class="fa-solid fa-chart-simple icon"></i>
+					</div>
+					<h1>UI Design</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing autem. dolor, sed laudantium et, suscipit consectetur veniam. Aliquid, ullam, quis.
+					</p>
+				</div>
+			</div>
+
+			<div class="my-skills">
+				<!-- skill set -->
+
+				<div class="skill">
+					<div class="icon-container">
+						<i class="fas fa-layer-group icon"></i>
+					</div>
+					<h1>UX Design</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing autem. dolor, sed laudantium et, suscipit consectetur veniam. Aliquid, ullam, quis.
+					</p>
+				</div>
+				<!-- skills set -->
+				
+				<!-- skills set -->
+				<div class="skill">
+					<div class="icon-container">
+						<i class="fa-solid fa-chart-simple icon"></i>
+					</div>
+					<h1>NETWORK INSTALLATION</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing autem. dolor, sed laudantium et, suscipit consectetur veniam. Aliquid, ullam, quis.
+					</p>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<!-- =================== portfolio ================== -->
+	<section class="portfolio" id="portfolio">
+		<div class="container">
+			<div class="section-heading">
+				<h1>Portfolio</h1>
+				<h6>View some of my recent work</h6>
+			</div>
+			<!-- ---------- portfolio item ----------- -->
+			<div class="portfolio-item">
+				<div class="portfolio-img margin-to-right ">
+					<img src="assets/img/4.jpg" alt="">
+				</div>
+				<div class="portfolio-description">
+					<h6>Web Development</h6>
+					<h1>Blog Website</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						praesentium, iure dolor nobis corrupti eos! Aperiam, magni 
+					</p>
+					<a href="#" class="cta">View Details</a>
+				</div>
+			</div>
+			<!-- ---------- portfolio item ----------- -->
+			<div class="portfolio-item">
+				<div class="portfolio-description margin-to-right ">
+					<h6>Web Development</h6>
+					<h1>Blog Website</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						praesentium, iure dolor nobis corrupti eos! Aperiam, magni 
+					</p>
+					<a href="#" class="cta">View Details</a>
+				</div>
+				<div class="portfolio-img">
+					<img src="assets/img/5.jpg" alt="">
+				</div>
+			</div>
+			<!-- ---------- portfolio item ----------- -->
+			<div class="portfolio-item">
+				<div class="portfolio-img margin-to-right ">
+					<img src="assets/img/dashboard-resp.png" alt="">
+				</div>
+				<div class="portfolio-description">
+					<h6>Web Design</h6>
+					<h1>Responsive Dashboard</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						praesentium, iure dolor nobis corrupti eos! Aperiam, magni 
+					</p>
+					<a href="#" class="cta">View Details</a>
+				</div>
+			</div>
+			<!-- ------------- protfolio-item -------------- -->
+		</div>
+	</section>
+	<!-- =================== experience ================== -->
+	<section class="experience" id="experience">
+		<div class="container">
+			<div class="section-heading">
+				<h1>Work Experience</h1>
+				<h6>Past and Current Jobs</h6>
+			</div>
+			<!-- ---------- timeline----------- -->
+			<div class="timeline">
+				<ul class="jobs">
+					<li class="date" data-date="2024 - Present">
+						<h1>Free Lancer</h1>
+						<p >
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Ut dignissimos placeat blanditiis, beatae, corporis sapiente em
+						</p>
+					</li>
+					<li class="date" data-date="Nov 2022 - OCT 2023">
+						<h1>Volta River Authority</h1>
+						<p>
+							<span><i>Naional Service</i></span>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Ut dignissimos placeat blanditiis, beatae, corporis sapiente em
+						</p>
+					</li>
+					<li class="date" data-date="Feb 2021 - Dec 2022">
+						<h1>CyberTek Gh</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Ut dignissimos placeat blanditiis, beatae, corporis sapiente em
+						</p>
+					</li>
+					<li class="date" data-date="May 2022 - July 2022">
+						<h1>Intenship</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							Ut dignissimos placeat blanditiis, beatae, corporis sapiente em
+						</p>
+					</li>
+				</ul>
+				<!-- Donwload CV -->
+				<!-- <div class="mycv">
+					<a href="file/CV.pdf" download class="cvBtn">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						Download CV
+					</a>
+				</div> -->
+			</div>
+		</div>
+	</section>
+	<!-- =================== contacts ================== -->
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="section-heading">
+				<h1>Contacts</h1>
+				<h6>let's Work together</h6>
+			</div>
+			<form action="" class="mainform">
+
+				<div class="inputBox">
+					<input type="text" id="name" name="name" required>
+					<span>Enter your name</span>
+				</div>
+				
+
+				<div class="inputBox">
+					<input type="email" id="email" name="email" required>
+					<span>Enter your email</span>
+				</div>
+				
+				<div class="inputBox">
+					<select name="service" id="service">
+						<option value="" selected></option>
+						<option value="" >Web Design</option>
+						<option value="">Web Development</option>
+						<option value="">Web Design/Development</option>
+						<option value="">Logo Design</option>
+						<option value="">UI WireFrame</option>
+					</select>
+					<span>Select Service</span>
+				</div>
+				
+				<div class="inputBox">
+					<textarea name="subject" id="subject" cols="6" rows="3"></textarea>
+					<span>Subject</span>
+				</div>
+				
+				<input type="submit" value="submit">
+			</form>
+		</div>
+	</section>
+
+	<!-- =========== footer ============ -->
+	<footer class="copyright">
+		<div class="up" id="up">
+			<a href="#about"><i class="fas fa-chevron-up arrowup"></i></a>
+		</div>
+		<p>&copy; 2020 DESMOND DEVEH</p>
+		<p style="font-weight: 400; font-size: 12px;">powered by: DeTech</p>
+	</footer>
+
+
+	<script type="text/javascript" src="assets/js/fontawesome_all.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	 <!--  <script>
+	    AOS.init();
+	  </script> -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	  <script type="text/javascript" src="assets/js/main_js.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
